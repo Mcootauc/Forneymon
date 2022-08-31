@@ -265,28 +265,3 @@ public class ForneymonagArray implements Forneymonagerie {
         }
     }
 }
-
-// ===================================================
-// >>> [AF] Summary
-// Functionally, an excellent submission that was
-// plainly well-tested and caught all but a couple of
-// edge cases. Stylistically, however, room for a lot of
-// improvement, as documentation was absent, and code
-// repetition was located in a lot of different places
-// throughout your code. Look for opportunities to not
-// repeat similar logic by calling other methods or
-// making more helper methods, and you'll be golden
-// in the future!
-// ---------------------------------------------------
-// >>> [AF] Style Checklist
-// [X] Variables and helper methods named and used well
-// [ ] Proper and consistent indentation and spacing
-// [ ] Proper JavaDocs provided for ALL methods
-// [ ] Logic is adequately simplified
-// [ ] Code repetition is kept to a minimum
-// ---------------------------------------------------
-// Correctness:         96 / 100 (-2 / missed unit test)
-// Style Penalty:       -4
-// Late (-20%):         -18
-// Total:               74 / 100
-// ===================================================
