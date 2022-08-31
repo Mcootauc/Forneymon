@@ -31,20 +31,11 @@ public class ForneymonagArray implements Forneymonagerie {
     // Methods
     // ----------------------------------------------------------
     
-    // >> [AF] Oh no! Lacking JavaDocs on all of your methods (-1)
     public boolean empty () {
-        // >> [AF] Better: return this.size == 0;
-        // Note how your return value is the same as your if-condition!
-    	if(this.size == 0) {
-    		return true;
-    	} else {
-    		return false;
-    	}
+    	return this.size == 0;
     }
-    
-    // >> [AF] Still mingling tabs and spaces for indents below! Need to use only
-    // spaces to standardize how indents appear across editors (-1)
-	public int size () {
+	
+    public int size () {
     	return this.size;
     }
     
@@ -70,8 +61,6 @@ public class ForneymonagArray implements Forneymonagerie {
     }
     
     public boolean releaseSpecies (String fmSpecies) {
-        // >> [AF] releaseSpecies can make use of the getSpeciesIndex method to
-        // reduce repeated code (-0.5)
         for(int i = 0; i < this.size; i++) {
         	if(this.collection[i].getSpecies() != null && this.collection[i].getSpecies().equals(fmSpecies)) {
         		remove(i);
