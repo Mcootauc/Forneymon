@@ -94,16 +94,10 @@ public class ForneymonagArray implements Forneymonagerie {
         	return null;
         }
         for(int i = 1; i < this.size; i++) {
-            // >> [AF] Looks like some repeated logic below -- see how these if-statements are almost
-            // exactly the same? Time to take a second trip to the drawing board when you notice that (-0.5)
-        	if(this.collection[highIndex].getLevel() != this.collection[i].getLevel()) {
-        		if(this.collection[highIndex].getLevel() < this.collection[i].getLevel()) {
-        			highIndex = i;
-        		}
-        	}else if(this.collection[highIndex].getHealth() != this.collection[i].getHealth()) {
-        		if(this.collection[highIndex].getHealth() < this.collection[i].getHealth()) {
-        			highIndex = i;
-        		}
+        	if(this.collection[highIndex].getLevel() != this.collection[i].getLevel() && this.collection[highIndex].getLevel() < this.collection[i].getLevel()) {
+			highIndex = i;
+        	}else if(this.collection[highIndex].getHealth() != this.collection[i].getHealth() && this.collection[highIndex].getHealth() < this.collection[i].getHealth()) {
+        		highIndex = i;
         	}
         }
         return this.collection[highIndex];
