@@ -4,7 +4,7 @@ By Mitchell Cootauco
 
 **CMSI 2120** Data Structures & Applications, Fall 2022
 
-Forneymon is a java program that simulates a Pokemon Game. The meetings are also according to some unary and binary constraints on the dates of each meeting. 
+Forneymon is a java program that has the goal to simulate a Pokemon Game. The program has many methods such as, adding forneymon to a collection, removing forneymon, getting the MVP of the collection, trading forneymon, and rearranging forneymon in the collection.
 
 An unary constraint is a constraint on a single variable and a binary constraint is a constraint over a pair of variables. 
 
