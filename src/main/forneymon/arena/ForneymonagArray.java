@@ -123,11 +123,6 @@ public class ForneymonagArray implements Forneymonagerie {
         return -1;
     }
     
-    // >> [AF] Notice how getSpeciesIndex and containsSpecies are basically the same
-    // method in terms of the implementing syntax; here's where you should spot the
-    // similarity and exploit opportunities to reduce repetition, e.g., you could have
-    // implemented containsSpecies as simply: return getSpeciesIndex(toCheck) != -1;
-    // or (mainly for future assignments) create a helper that both can call (-1)
     public boolean containsSpecies (String fmSpecies) {
     	 for(int i = 0; i < this.size; i++) {
          	if(this.collection[i].getSpecies() != null && this.collection[i].getSpecies().equals(fmSpecies)) {
@@ -139,8 +134,6 @@ public class ForneymonagArray implements Forneymonagerie {
     
     public void trade (Forneymonagerie other) {
         Forneymon[] tempArr = this.collection; 
-        // >> [AF] Same here: you're downcasting other multiple times; just save the downcast
-        // reference once and then use that onwards
         this.collection = ((ForneymonagArray)other).collection;
         ((ForneymonagArray)other).collection = tempArr;
         int tempSize = this.size; 
